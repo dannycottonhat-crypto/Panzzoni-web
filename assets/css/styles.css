@@ -22,14 +22,18 @@ body{
 }
 img{display:block;max-width:100%}
 a{text-decoration:none;color:inherit}
-.container{width:min(var(--max),calc(100% - 36px));margin:0 auto}
+.container{width:min(var(--max),calc(100% - 36px));margin:0 auto;}.container{
+  width:min(var(--max),calc(100% - 36px));
+  margin:0 auto;
+  text-align:center;
+}
 .topbar{
   position:sticky;top:0;z-index:60;
   background:rgba(245,239,226,.92);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
-.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;text-align:left;gap:18px;padding:16px 0}
 .brand{display:flex;align-items:center;gap:14px;font-weight:700;letter-spacing:.08em}
 .brand img{width:44px;height:44px;object-fit:contain;border-radius:50%;background:#fff}
 .nav-links{display:flex;gap:20px;flex-wrap:wrap}
